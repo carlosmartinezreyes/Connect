@@ -1,0 +1,29 @@
+[
+        {
+        "titulo": "Destacada1",
+        "nombre_juego": "Call of Duty",
+        "descripción": "Primera foto de un juego",
+        "ubicación": "Madrid",
+        "foto": "Virtualización de escritorio",
+        "cc": "https://www.trustedreviews.com/wp-content/uploads/sites/54/2021/11/Vanguard_Reveal_06-768x432.png"
+        },
+
+        {
+            "titulo": "Destacada1",
+            "nombre_juego": "Call of Duty",
+            "descripción": "Primera foto de un juego",
+            "ubicación": "Madrid",
+            "foto": "Virtualización de escritorio",
+            "cc": "https://www.trustedreviews.com/wp-content/uploads/sites/54/2021/11/Vanguard_Reveal_06-768x432.png"
+        },
+        
+        {
+            "titulo": "Destacada1",
+            "nombre_juego": "Call of Duty",
+            "descripción": "Primera foto de un juego",
+            "ubicación": "Madrid",
+            "foto": "Virtualización de escritorio",
+            "cc": "https://www.trustedreviews.com/wp-content/uploads/sites/54/2021/11/Vanguard_Reveal_06-768x432.png"
+        }
+
+]

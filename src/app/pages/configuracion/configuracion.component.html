@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="configuracion.component.css">
+</head>
+
+<body>
+
+<div id="configuracion_cuenta">
+
+    <fieldset>
+        <legend>Información de la cuenta</legend>
+        <p id="nombre_usuario"><span>Usuario: </span></p>
+        <p id="email_usuario"><span>Email: </span></p>
+        <p id="nivel_cuenta"><span>Nivel: </span>1</p>
+        <!--<p><span>ID: </span>7932</p>-->
+            
+    </fieldset>
+
+    <fieldset> 
+        <legend>Privacidad</legend>
+        <div>
+            <p>No aparecer en el ranking</p>
+            <label class="switch">
+                <input type="checkbox" id="toggle-button" onclick="toggleButtonRanking()">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div>
+            <p>Generar estadísticas de la cuenta</p>
+            <label class="switch">
+                <input type="checkbox" id="toggle-button" onclick="toggleButton()">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </fieldset>
+
+    <button id="eliminar_cuenta">Eliminar cuenta</button>
+</div>
+
+
+
+ <!-- Ventana modal, por defecto no visiblel -->
+ <div id="ventanaModal" class="modal">
+    <div class="contenido-modal">
+        <span class="cerrar"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+          </svg></span>
+        <h2 style="text-align: center;">Confirmar Eliminación</h2>
+        <p id="cuenta_a_eliminar" style="text-align: center;">Cuenta a eliminar: </p>
+        <div id="contenedor_botones">
+            <button id="confirmar_eliminar_cuenta" (click)="deleteUsuario()">Eliminar cuenta</button>
+            <button id="cancelar">Cancelar</button>
+        </div>
+    </div>
+  </div>
+
+</body>
+</html>

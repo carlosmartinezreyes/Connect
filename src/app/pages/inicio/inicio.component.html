@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicio.component.css">
+
+   
+   
+</head>
+<body id="body_inicio">
+
+  <!--<div id="version_app">Versión: 1.10.6.23</div>-->
+
+
+  <div id="barra_navegacion">
+    <nav class="navbar navbar-expand-lg navbar-darkb bg-dark mx-auto">   
+      <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+   
+            <select id="desplegable" class="form-select form-select-sm" aria-label="Ejemplo de .form-select-sm">
+              <option selected>Categorías</option>
+              <option id="opcion" value="1">Móvil</option>
+              <option value="2">PC</option>
+              <option value="3">Cámara de fotos</option>
+            </select>
+            <input id="busqueda" type="search" class="form-control form-control-dark" placeholder="Buscar publicaciones" aria-label="Search">
+          
+            <button class="btn btn-outline-light me-2" id="voz_reconocimiento"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-mic-fill" viewBox="0 0 16 16">
+              <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+              <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+            </svg></button>
+   
+   
+          <div class="text-end">
+            <button routerLink="" disabled id="boton_buscar_publicaciones" type="button" class="btn btn-outline-light me-2">Buscar</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>   
+     
+  <br>
+  <br>
+ 
+  <div id="version_app">Algunos datos pueden tardar hasta 40 segundos en cargar, tenga paciencia</div>
+  <h2>Publicaciones más recientes</h2>
+  <br>
+  
+<div id="coleccion_fotos">
+
+
+<div class="card">
+  <div class="perfil">
+    <div id="nombre_usuario"></div>
+  </div>
+  <div class="card-image"></div>
+  <div class="card-text">
+      <!--<span class="date">4 days ago</span>-->
+      <div id="etiqueta_ubicacion">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="-0 0 16 16">
+          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        </svg>
+        <p id="ubicacion">Madrid</p>
+        <div id="card-details" class="card-details">
+          <iframe id="map" width="280" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-3.819%2C40.311%2C-3.591%2C40.479&amp;layer=mapnik&amp;marker=40.4168%2C-3.7038"></iframe><br/>
+        <!--<small><a href="https://www.openstreetmap.org/#map=13/39.4665/-0.3862">Ver mapa más grande</a></small>-->
+      </div>
+      </div>
+      <h2>Post One</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
+  </div>
+  <div class="card-stats">
+      <div class="stat">
+          <!--<div class="value">n/a<sup>m</sup></div>-->
+          <div class="type"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+          </svg></div>
+      </div>
+      <div class="stat">
+          <!--<div class="value">n/a</div>-->
+          <div class="type"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
+            <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/>
+          </svg></div>
+      </div>
+      <div class="stat">
+          <!--<div class="value">n/a</div>-->
+          <div class="type"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+          </svg></div>
+      </div>
+  </div>
+</div>
+
+
+<div class="card skeleton-card">
+  <div class="perfil">
+    <div id="nombre_usuario">*******</div>
+  </div>
+  <div class="card-image"></div>
+  <div class="card-text">
+      <!--<span class="date">4 days ago</span>-->
+      <div id="etiqueta_ubicacion">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="-0 0 16 16">
+          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        </svg>
+        <p id="ubicacion">-------</p>
+        
+      </div>
+      <h2>---------------</h2>
+      <p>******************************************************************************************************</p>
+  </div>
+  <div class="card-stats">
+      <div class="stat">
+          <!--<div class="value">n/a<sup>m</sup></div>-->
+          <div class="type"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+          </svg></div>
+      </div>
+      <div class="stat">
+          <!--<div class="value">n/a</div>-->
+          <div class="type"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
+            <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/>
+          </svg></div>
+      </div>
+      <div class="stat">
+          <!--<div class="value">n/a</div>-->
+          <div class="type"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+          </svg></div>
+      </div>
+  </div>
+</div>
+
+
+<div class="card skeleton-card">
+  <div class="perfil">
+    <div id="nombre_usuario">*******</div>
+  </div>
+  <div class="card-image"></div>
+  <div class="card-text">
+      <!--<span class="date">4 days ago</span>-->
+      <div id="etiqueta_ubicacion">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="-0 0 16 16">
+          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        </svg>
+        <p id="ubicacion">-------</p>
+        
+      </div>
+      <h2>---------------</h2>
+      <p>******************************************************************************************************</p>
+  </div>
+  <div class="card-stats">
+      <div class="stat">
+          <!--<div class="value">n/a<sup>m</sup></div>-->
+          <div class="type"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+          </svg></div>
+      </div>
+      <div class="stat">
+          <!--<div class="value">n/a</div>-->
+          <div class="type"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
+            <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/>
+          </svg></div>
+      </div>
+      <div class="stat">
+          <!--<div class="value">n/a</div>-->
+          <div class="type"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+          </svg></div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="card skeleton-card">
+  <div class="perfil">
+    <div id="nombre_usuario">*******</div>
+  </div>
+  <div class="card-image"></div>
+  <div class="card-text">
+      <!--<span class="date">4 days ago</span>-->
+      <div id="etiqueta_ubicacion">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="-0 0 16 16">
+          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        </svg>
+        <p id="ubicacion">-------</p>
+        
+      </div>
+      <h2>---------------</h2>
+      <p>******************************************************************************************************</p>
+  </div>
+  <div class="card-stats">
+      <div class="stat">
+          <!--<div class="value">n/a<sup>m</sup></div>-->
+          <div class="type"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+          </svg></div>
+      </div>
+      <div class="stat">
+          <!--<div class="value">n/a</div>-->
+          <div class="type"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
+            <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/>
+          </svg></div>
+      </div>
+      <div class="stat">
+          <!--<div class="value">n/a</div>-->
+          <div class="type"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+          </svg></div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="card skeleton-card">
+  <div class="perfil">
+    <div id="nombre_usuario">*******</div>
+  </div>
+  <div class="card-image"></div>
+  <div class="card-text">
+      <!--<span class="date">4 days ago</span>-->
+      <div id="etiqueta_ubicacion">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="-0 0 16 16">
+          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        </svg>
+        <p id="ubicacion">-------</p>
+        
+      </div>
+      <h2>---------------</h2>
+      <p>******************************************************************************************************</p>
+  </div>
+  <div class="card-stats">
+      <div class="stat">
+          <!--<div class="value">n/a<sup>m</sup></div>-->
+          <div class="type"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+          </svg></div>
+      </div>
+      <div class="stat">
+          <!--<div class="value">n/a</div>-->
+          <div class="type"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
+            <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/>
+          </svg></div>
+      </div>
+      <div class="stat">
+          <!--<div class="value">n/a</div>-->
+          <div class="type"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+          </svg></div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="card" *ngFor="let publicacion of publicaciones; index as i;">
+  <div class="perfil">
+    <div id="nombre_usuario">{{publicacion.nombre_usuario}}</div>
+  </div>
+  <div class="card-image">
+    <img [src]="publicacion.multimedia" alt="Imagen de la publicación">
+  </div>
+  <div class="card-text">
+    <div id="etiqueta_ubicacion">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="-0 0 16 16">
+        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+      </svg>
+      <p id="ubicacion{{i}}" onclick="toggleCardDetails(i)">{{publicacion.ubicacion}}</p>
+      <div id="card-details{{i}}" class="card-details">
+        <iframe id="map{{i}}" width="280" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-3.819%2C40.311%2C-3.591%2C40.479&amp;layer=mapnik&amp;marker=40.4168%2C-3.7038"></iframe><br/>
+      </div>
+    </div>
+    <h2>{{publicacion.nombre_publicacion}}</h2>
+    <p>{{publicacion.descripcion}}</p>
+  </div>
+  <div class="card-stats">
+    <div class="stat">
+      <div id="me_gusta{{i}}" onclick="changeColor(event)" class="type">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+        </svg>
+      </div>
+    </div>
+    <div class="stat">
+      <div id="visualizaciones{{i}}" class="type">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
+          <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/>
+        </svg>
+      </div>
+    </div>
+    <div class="stat">
+      <div id="comentarios{{i}}" class="type">
+        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+          <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+          <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+</body>
+</html>
+
+

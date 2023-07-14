@@ -1,0 +1,97 @@
+<link rel="stylesheet" href="perfil.component.css">
+
+
+<body>
+
+
+    <script>
+
+
+
+
+    </script>
+    
+    
+
+<div id="contenedor_titulo_foto_perfil">
+    <div id="columna_nivel_nombre_tabla">
+    <h2 id="nivel_jugador" style="">Nivel 1</h2>
+    <h1 class="" id="titulo_nombre_usuario"></h1>
+    <div id="contenedor_popularidad">
+        <div id="popularidad" class="mx-auto">
+            <table>
+                <tr>
+                    <th>Seguidores</th><th>Seguidos</th>
+                </tr>
+                <tr>
+                    <td>0</td><td>0</td>
+                </tr>
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+   <div id="prueba"></div>
+
+
+    <div class="profile-pic-container">
+        <img id="profilePic" src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/2023/03_29_revuelto/gate_models_s_02_m.jpg" alt="Profile Picture">
+        <div class="overlay">
+          <svg class="upload-icon" xmlns="http://www.w3.org/2000/svg" (click)="cambiarFotoPerfil()" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="uploadIcon">
+            <path d="M12 4v16m8-8H4"></path>
+          </svg>
+        </div>
+      </div>
+ 
+
+   <!-- <div class="" style="width: 200px; height: 200px; border-radius: 50%; overflow: hidden;">
+        <img id="profilePic" src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/2023/03_29_revuelto/gate_models_s_02_m.jpg"
+        style="width: 100%; height: 100%; object-fit: cover;">
+  </div>-->
+
+  <div id="cajas_opciones">
+    <div id="cambiar_nombre" onmouseover="mostrarInputNombre()" onmouseout="ocultarInputNombre()">Cambiar nombre
+        <form action="" [formGroup]="NombreUsuarioForm">
+            <div>
+
+                <input id="cambiar_nombre_input" formControlName="nombre_usuario_input" style="display:none;" type="text">
+            
+                <button (click)="updateNombreUsuario()" id="boton_cambiar_nombre" class="btn btn-outline-dark" style="display:none;">Cambiar</button>
+                
+            </div> 
+        </form>
+    </div>
+
+    <div id="cambiar_email"  onmouseover="mostrarInputEmail()" onmouseout="ocultarInputEmail()">Cambiar email
+    <form action="" [formGroup]="EmailUsuarioForm">
+        <div>
+
+            <input id="cambiar_email_input" formControlName="email" style="display:none;" type="text">
+          
+            <button (click)="updateEmail()" id="boton_cambiar_email" class="btn btn-outline-dark" style="display:none;">Cambiar</button>
+            
+        </div> 
+    </form>
+    </div>
+    
+    <div id="cambiar_contrasenna" onmouseover="mostrarInputContrasena()" onmouseout="ocultarInputContrasena()">Cambiar contraseña
+        <form action="" [formGroup]="ContrasennaUsuarioForm">
+            <div>
+                <input formControlName="contrasenna" id="cambiar_contrasena_input" style="display:none;" type="password">
+                <button (click)="updateContrasenna()" id="boton_cambiar_contrasenna" class="btn btn-outline-dark" style="display:none;">Cambiar</button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+
+
+
+
+
+<!--Para llenar el body-->
+<p style="margin-top: 11%; color: transparent;">h</p>
+</body>
+
+

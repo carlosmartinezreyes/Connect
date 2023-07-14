@@ -1,0 +1,258 @@
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2022/05/26/15/55/sea-7223208_1280.png');
+    background-repeat: no-repeat;
+   
+
+    background-color: rgba(14,15,36,255); /* Color de fondo para áreas sin imagen */
+  background-repeat: no-repeat;
+
+  position: absolute;
+    /* bottom: 0; */
+    /* left: 0; */
+    width: 100%;
+    height: 87%;
+
+  /*Para posicionar la foto en el centro de la ventana*/
+  /*background-position: center center;*/
+  }
+
+  /*
+  https://cdn.pixabay.com/photo/2020/05/03/09/54/lamborghini-5124486_1280.jpg
+  https://cdn.pixabay.com/photo/2019/09/23/12/45/car-racing-4498477_1280.jpg
+  https://cdn.pixabay.com/photo/2019/09/23/12/45/car-racing-4498477_1280.jpg
+
+  //ARCADE
+  https://images.pexels.com/photos/5883539/pexels-photo-5883539.jpeg
+  */
+
+#cajas_opciones{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    margin-top: 1.9em;
+    
+}
+
+
+
+#cajas_opciones div{
+    background-image: linear-gradient(to right, rgb(56, 20, 239), rgb(166, 50, 255));
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    padding: 8px;
+    width: 22em;
+    float: right;
+    height: 2.5em;
+    border-radius: 10px;
+    margin-bottom: 6px;
+    transition: height 2s;
+   
+}
+
+#cajas_opciones div:hover{
+  height: 7em;
+}
+
+#cajas_opciones div div {
+  display: flex;
+  background-image: none;
+  font-family: inherit;
+  color: inherit;
+  padding: 0;
+  width: auto;
+  float: none;
+  height: auto;
+  border-radius: 0;
+  margin-bottom: 0;
+  transition: none;
+}
+
+#cajas_opciones div div button{
+  margin-top: 4px;
+  margin-left: 10px;
+ 
+}
+
+
+#contenedor_info_perfil{
+display: flex;
+
+height: 80px;
+}
+
+#columna_nivel_nombre_tabla{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: -33px;
+    height: 232.99px;
+}
+#contenedor_titulo_foto_perfil {
+    display: flex;
+    width: 65%;
+    justify-content: flex-end;
+    margin-top: 10%;
+    /*margin-bottom: 3%;*/
+    
+  }
+
+#titulo_nombre_usuario{
+    margin-right: 20px;
+    font-size: 80px;
+
+    font-family:fantasy     ;
+    
+    
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    text-shadow: 5px 5px 10px rgb(255, 255, 255);
+    line-height: 0px;
+    
+}
+
+
+/*Tarjeta nivel de cuenta*/
+#nivel_jugador{
+    color: aliceblue;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
+    background-image: linear-gradient(to right, rgb(56, 20, 239), rgb(166, 50, 255));
+    border-radius: 10px;
+    padding-block: 6px;
+    padding-inline: 8px;
+    margin-top: -10px;
+
+}
+
+#popularidad{
+    margin-left: 22%;
+    
+    font-family:fantasy     ;
+    
+    
+    -webkit-text-stroke: 0.1px rgb(255, 255, 255);
+   
+    line-height: 0px;
+}
+
+#popularidad th{
+    font-size: 37px;
+    padding-top: 5px;
+}
+  
+#popularidad th, td {
+padding: 10px;
+
+
+}
+  
+#popularidad td {
+    text-align: center;
+    font-size: 32px;
+    padding-top: 10px;
+
+    font-family:Arial, Helvetica, sans-serif;
+    
+        
+    font-weight: bold;
+    color: #ff007f;
+    -webkit-text-stroke: #ff007f;;
+    
+}
+
+#popularidad table{
+  
+    background-color: rgb(0 0 0 / 55%);
+    border-radius: 10px;
+    height: 90px;
+    border-style: solid;
+    border-color: aqua;
+   
+}
+
+ 
+
+
+#contenedor_popularidad{
+    display: flex;
+    
+    justify-content: flex-end;
+    align-items: center;
+   
+    /*margin-bottom: 3%;*/
+
+}
+
+
+/*CSS IMAGEN DE PERFIL*/
+.profile-pic-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .profile-pic-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .overlay:hover {
+    opacity: 1;
+  }
+  
+  .upload-icon {
+    width: 40px;
+    height: 40px;
+    stroke: #fff;
+  }
+
+
+  /*-----------*/
+
+#cajas_opciones input{
+    display: flex;
+    margin-top: 0.5em;
+    border-radius: 7px;
+    border-color: #ff09ff;
+    background-color: rgb(194, 194, 194);
+    border-width: 3px;
+    border-style: solid;
+    height: 30px;
+}
+
+
+
+
+
+
+
+/*BOTÓN BOOSTRAP QUE INVIERTE LOS COLORES*/
+.btn.btn-outline-dark {
+  background-image: linear-gradient(to right, rgb(11, 11, 10), rgb(141, 139, 139));
+  color: white;
+  transition: background-image 1s ease, color 1s ease; /* Transición de 1 segundo */
+}
+
+.btn.btn-outline-dark:hover {
+  background-image: linear-gradient(to right, rgb(197, 197, 197), rgb(255, 255, 255));
+  color: black;
+}
+

@@ -1,0 +1,246 @@
+.card-text input{
+    border-style: inset;
+    border-width: 3px;
+}
+
+.card-text textarea{
+    border-style: inset;
+    border-width: 3px;
+
+    /*Evitar que se pueda hacer más grande el textarea*/
+    resize: none;
+}
+
+#etiqueta_ubicacion{
+  display: flex;
+    
+}
+
+#etiqueta_ubicacion svg{
+    margin-left: 7px;
+}
+#etiqueta_ubicacion #ubicacion{
+    color: aliceblue;
+    margin-left: 5px;
+}
+
+
+
+.card-text #ubicacion{
+    display: flex;
+    background-color: brown;
+    width: 100px;
+    height: 25px;
+    border-radius: 20px;
+    color: aliceblue;
+    
+}
+
+
+.card-text #titulo{
+    
+    background-image: linear-gradient(to right, rgb(11, 11, 10), rgb(141, 139, 139));
+    color: aliceblue;
+    border-radius: 10px;
+    width: 300px;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-top: 15px
+}
+
+
+.card-text #descripcion{
+    background-image: linear-gradient(to right, rgb(11, 11, 10), rgb(141, 139, 139));
+    color: aliceblue;
+    border-radius: 10px;
+    width: 300px;
+    height: 85px;
+    
+}
+
+::placeholder{
+color: aliceblue;
+text-align: center;
+}
+
+#foto_para_subir{
+    background-color: black;
+    border-radius: 10px;
+}
+
+/*Estilos tarjeta de publicación*/
+
+.card {
+    display: grid;
+    grid-template-columns: 400px;
+    width: 400px;
+    margin-top: 90px;
+    margin-bottom: 40px;
+    grid-template-rows: 40px 240px 220px 80px;
+    grid-template-areas: "perfil" "image" "text" "stats";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+}
+
+.perfil {
+    grid-area: perfil;
+    height: 40px;
+    background-color: #000000;
+    display: flex;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+   padding: 8px;
+}  
+
+.perfil #nombre_usuario{
+    color: aliceblue;
+    margin-left: 20px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.card-image {
+grid-area: image;
+height: 250px;
+
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  /*Icono + emergente*/
+
+#uploadIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover #uploadIcon {
+  opacity: 1;
+}
+
+.card-text {
+grid-area: text;
+}
+
+.card-stats {
+grid-area: stats; 
+}
+
+.card-image {
+  grid-area: image;
+  /*background: url("/assets/img/Vanguard_Reveal_06.webp");*/
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;   
+}
+
+/*Imagen subida a la tarjeta*/
+#uploadPreview1{
+  object-fit: cover;
+  border-radius: 10px;
+  border-style: none;
+  text-decoration: none;
+}
+
+
+.image-container p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    line-height: 60px;
+    color: rgb(255, 255, 255);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: bold;
+    font-size: 20px;
+    
+  }
+    .card-text {
+        grid-area: text;
+        margin: 25px;
+        }
+        .card-text .date {
+        color: rgb(255, 7, 110);
+        font-size:13px;
+        }
+        .card-text p {
+        color: grey;
+        font-size:15px;
+        font-weight: 300;
+        }
+        .card-text h2 {
+        margin-top:0px;
+        font-size:28px;
+        }
+
+
+.card-stats {
+    grid-area: stats; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-image: linear-gradient(to right, rgb(56, 20, 239), rgb(140, 14, 235))   ;
+}
+
+.card-stats .stat {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+color: white;
+padding:10px;
+}
+
+/*BOTÓN SUBIR ARCHIVO*/
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .custom-file-upload:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+
+  /*botón enviar mensaje*/
+  #boton_subir_foto{
+    background-image: linear-gradient(to right, rgb(56, 20, 239), rgb(140, 14, 235))   ;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    
+  }
